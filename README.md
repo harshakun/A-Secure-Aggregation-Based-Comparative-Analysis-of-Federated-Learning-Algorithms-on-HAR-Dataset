@@ -51,14 +51,13 @@ Client Device → SSL Training → Local Fine-Tuning → Encrypted Model Update 
 ```
 ├── data/                     # UCI-HAR dataset (not included)
 ├── src/
-│   ├── ssl_pretraining.py    # Self-Supervised Learning stage
-│   ├── federated_train.py    # Federated Learning stage
-│   ├── secure_aggregation.py # Differential Privacy + Secure Aggregation
-│   ├── evaluation.py         # Metrics & visualization
+│   ├── Horizontal_Federated_Learning.py    
+│   ├── federated_train.py    
+│   ├── secure_aggregation.py 
 ├── results/
-│   ├── accuracy.png
-│   ├── f1_score.png
-│   └── gradient_leakage.png
+│   ├── Horizontal_Federated_Learning.py    
+│   ├── federated_train.py    
+│   ├── secure_aggregation.py
 └── README.md
 ```
 
@@ -69,11 +68,6 @@ Client Device → SSL Training → Local Fine-Tuning → Encrypted Model Update 
 ### Install dependencies
 ```sh
 pip install -r requirements.txt
-```
-
-### Run federated training
-```sh
-python federated_train.py --algorithm FedAvg --secure_agg True
 ```
 
 ---
